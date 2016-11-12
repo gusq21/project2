@@ -2,12 +2,12 @@
 //  Player.cpp
 //
 
-#include "Player.hpp"
+#include "Player.h"
 
 // TO DO: implement Player's assignment operator
 Player& Player::operator=(const Player& p) {
-   // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
+	// TODO: implement this function properly
+	throw std::logic_error("not implemented yet");
 }
 
 // return player's new position after player rolls die
@@ -16,6 +16,17 @@ Player& Player::operator=(const Player& p) {
 // TO DO: implement this function to move player to the new postion
 //        after player rolls die. Position must be inside the board
 int Player::rollDieAndMove() {
-   // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
+	int faceValue = die.getFaceValue();
+		int newPosition = faceValue + position;
+		if (newPosition > 100) {
+			cout << "you must land on 100 to win, you will be returned to your previous position" << endl;
+			return (position - faceValue);
+		}
+
+		cout << newPosition;
+
+	
+	
+	// TODO: implement this function properly
+	throw std::logic_error("not implemented yet");
 }
