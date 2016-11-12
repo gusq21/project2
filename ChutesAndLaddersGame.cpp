@@ -5,24 +5,25 @@
 #include <iostream>
 #include <string>
 
-#include "ChutesAndLaddersGame.hpp"
-#include "GameBoard.hpp"
-#include "Player.hpp"
+#include "ChutesAndLaddersGame.h"
+#include "GameBoard.h"
+#include "Player.h"
 
 using namespace std;
 
 // TODO: implement the constructor with all your team members
 // constructor with the default value of a minimum players
 ChutesAndLaddersGame::ChutesAndLaddersGame(int nPlayers) : winner("no winner") {
-   // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
+	// TODO: implement this function properly
+	throw std::logic_error("not implemented yet");
 }
 
 // TODO: implement the destructor
 // destructor - dequeue players from the queue
 ChutesAndLaddersGame::~ChutesAndLaddersGame() {
-   // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
+	// TODO: implement this function properly
+
+	throw std::logic_error("not implemented yet");
 }
 
 // TO DO: implement this function properly
@@ -30,8 +31,10 @@ ChutesAndLaddersGame::~ChutesAndLaddersGame() {
 //        (i.e., the list should be the same as in the constructor).
 //        Place all players at the figurative square zero
 void ChutesAndLaddersGame::resetGame() {
-   // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
+	Player position = 0;
+	return;
+	// TODO: implement this function properly
+	throw std::logic_error("not implemented yet");
 }
 
 // TO DO: implement this function properly
@@ -45,7 +48,18 @@ void ChutesAndLaddersGame::resetGame() {
 //    - If player lands on the winning square 100, game is over
 //    - playGame returns after congratulating and printing the winner's name
 void ChutesAndLaddersGame::playGame() {
-   // TODO: implement this function properly
-   throw std::logic_error("not implemented yet");
-   
+	Player position;
+	while ( position != 100) {
+		Player rollDieAndMove();
+		GameBoard checkChutesAndLadders(Player position);
+		
+
+
+	}
+	
+	
+
+	// TODO: implement this function properly
+	throw std::logic_error("not implemented yet");
+
 }
